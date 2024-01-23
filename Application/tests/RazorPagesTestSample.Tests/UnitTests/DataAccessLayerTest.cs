@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 using RazorPagesTestSample.Data;
+using System.ComponentModel.DataAnnotations;
 
 namespace RazorPagesTestSample.Tests.UnitTests
 {
