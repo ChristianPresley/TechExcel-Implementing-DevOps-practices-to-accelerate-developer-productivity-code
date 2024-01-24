@@ -1,8 +1,8 @@
 on: workflow_dispatch
 
-# permissions:
-#   id-token: write
-#   contents: read
+permissions:
+  id-token: write
+  contents: read
 
 name: Azure Bicep
 jobs:
