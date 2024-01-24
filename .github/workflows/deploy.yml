@@ -4,9 +4,6 @@ permissions:
   id-token: write
   contents: read
 
-env:
-  targetEnv: dev
-
 name: Azure Bicep
 jobs:
   build-and-deploy:
@@ -26,4 +23,4 @@ jobs:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           resourceGroupName: ${{ vars.AZURE_RG }}
           template: ./InfrastructureAsCode/main.bicep
-          parameters: environment=${{ vars.targetEnv }}
+          parameters: environment=${{ vars.TARGET_ENVIRONMENT }}
