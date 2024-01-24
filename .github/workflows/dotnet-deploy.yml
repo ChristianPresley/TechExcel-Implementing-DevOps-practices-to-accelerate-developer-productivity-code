@@ -88,5 +88,5 @@ jobs:
           enable-AzPSSession: true
       - uses: azure/webapps-deploy@v2
         with:
-          app-name: 'scaf5hiwraedk-dev'
+          app-name: 'scaf5hiwraedk-${{ matrix.environment }}'
           images: scaf5hiwraedkmpnpreg.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
